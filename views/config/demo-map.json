@@ -1,0 +1,31 @@
+{
+    "res": {
+        "demo:page/index.tpl": {
+            "uri": "demo/widget/index.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "demo:widget/header/header.css": {
+            "uri": "/static/demo/widget/header/header.css",
+            "type": "css"
+        },
+        "demo:widget/header/header.js": {
+            "uri": "/static/demo/widget/header/header.js",
+            "type": "js",
+            "deps": [
+                "demo:widget/header/header.css"
+            ]
+        },
+        "demo:widget/header/header.tpl": {
+            "uri": "demo/widget/header/header.tpl",
+            "type": "tpl",
+            "deps": [
+                "demo:widget/header/header.js",
+                "demo:widget/header/header.css"
+            ]
+        }
+    },
+    "pkg": {}
+}
